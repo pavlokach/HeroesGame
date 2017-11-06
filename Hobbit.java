@@ -1,7 +1,12 @@
-public class Hobbit extends Character {
-    int hp = 0;
-    int power = 3;
+import java.util.concurrent.ThreadLocalRandom;
 
+public class Hobbit extends Character {
+
+
+    public Hobbit() {
+        setHp(3);
+        setPower(0);
+    }
 
     public void setHp(int hp) {
         super.setHp(hp);

@@ -1,13 +1,14 @@
 import java.util.concurrent.ThreadLocalRandom;
 
-public class Knight extends Character{
+public class Knight extends Character {
     int hp;
     int power;
 
     public Knight() {
-        setHp(ThreadLocalRandom.current().nextInt(2,  21    + 1));
-        setPower(ThreadLocalRandom.current().nextInt(2,  12    + 1));
+        setHp(ThreadLocalRandom.current().nextInt(2, 21 + 1));
+        setPower(ThreadLocalRandom.current().nextInt(2, 12 + 1));
     }
+
     public void setHp(int hp) {
         super.setHp(hp);
     }
@@ -17,7 +18,7 @@ public class Knight extends Character{
     }
 
     public int getPower() {
-        return ThreadLocalRandom.current().nextInt(2,  12 + 1);
+        return ThreadLocalRandom.current().nextInt(2, 12 + 1);
     }
 
     @Override

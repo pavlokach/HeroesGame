@@ -5,8 +5,8 @@ public class King extends Character {
     int power;
 
     public King() {
-        setHp(ThreadLocalRandom.current().nextInt(5,  15    + 1));
-        setPower(ThreadLocalRandom.current().nextInt(5,  15    + 1));
+        setHp(ThreadLocalRandom.current().nextInt(5, 15 + 1));
+        setPower(ThreadLocalRandom.current().nextInt(5, 15 + 1));
     }
 
 
@@ -18,6 +18,7 @@ public class King extends Character {
     public void setPower(int power) {
         this.power = power;
     }
+
     public int getPower() {
         return ThreadLocalRandom.current().nextInt(2, 21 + 1);
     }

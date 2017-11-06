@@ -10,7 +10,7 @@ public class CharacterFactory {
     Hobbit hobbit = new Hobbit();
 
 
-    public Character createCharacter(){
+    public Character createCharacter() {
         List<Character> lst = new ArrayList<Character>();
         lst.add(king);
         lst.add(knight);
