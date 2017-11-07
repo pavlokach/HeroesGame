@@ -10,14 +10,12 @@ public class Character {
         this.power = power;
     }
 
-    public boolean isAlive() {
+    boolean isAlive() {
         return hp > 0;
     }
 
     public void kick(Character other) {
         other.hp -= this.power;
-        System.out.println(this.toString() + " hit " + other.toString() + "wiht a power of " + this.power);
+        System.out.println(this.toString() + " hit " + other.toString() + " with a power of " + this.power);
     }
-
-
 }

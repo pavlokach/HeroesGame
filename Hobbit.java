@@ -1,9 +1,7 @@
-import java.util.concurrent.ThreadLocalRandom;
-
 public class Hobbit extends Character {
 
 
-    public Hobbit() {
+    Hobbit() {
         setHp(3);
         setPower(0);
     }
@@ -11,7 +9,6 @@ public class Hobbit extends Character {
     public void setHp(int hp) {
         super.setHp(hp);
     }
-
 
     public void setPower(int power) {
         super.setPower(power);

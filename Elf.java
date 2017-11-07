@@ -1,12 +1,8 @@
 public class Elf extends Character {
-    protected int hp = 10;
-    protected int power = 10;
-
 
     public void setHp(int hp) {
         super.setHp(hp);
     }
-
 
     public void setPower(int power) {
         super.setPower(power);
@@ -14,14 +10,13 @@ public class Elf extends Character {
 
     @Override
     public void kick(Character other) {
-        if (this.hp > other.hp) {
+        if (super.hp > other.hp) {
             System.out.println("You are too weak");
             other.hp -= other.hp;
         } else {
-            System.out.println(this.toString() + " hit " + other.toString());
+            System.out.println(this.toString() + " hit " + other.toString() + " with the power of 1");
             other.hp -= 1;
         }
-
     }
 
     @Override

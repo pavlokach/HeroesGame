@@ -1,22 +1,16 @@
-import java.util.Random;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.concurrent.ThreadLocalRandom;
 
-public class CharacterFactory {
+class CharacterFactory {
 
-    King king = new King();
-    Knight knight = new Knight();
-    Elf elf = new Elf();
-    Hobbit hobbit = new Hobbit();
-
-
-    public Character createCharacter() {
-        List<Character> lst = new ArrayList<Character>();
-        lst.add(king);
-        lst.add(knight);
-        lst.add(elf);
-        lst.add(hobbit);
-        Random rand = new Random();
-        return lst.get(rand.nextInt(lst.size()));
+    Character createCharacter() {
+        int rand = ThreadLocalRandom.current().nextInt(1, 4 + 1);
+        if (rand == 1)
+            return new King();
+        else if (rand == 2)
+            return new Knight();
+        else if (rand == 3)
+            return new Elf();
+        else
+            return new Hobbit();
     }
 }
